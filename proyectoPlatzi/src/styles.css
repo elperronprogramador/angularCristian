@@ -1,1 +1,187 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorPrimario: #12140e;
+    --colorsecundario: #FFF5E4;
+    --colorTercero:#C1D8C3;
+    --colorCuarto:#6A9C89;
+    --colorQuinto:#8f0808;
+}
+
+.headerInicio{
+    height: 3.5rem;
+    display: flex;
+    justify-content:space-between ;
+    background: var(--colorPrimario);
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.seccionLogo{
+    display: flex;
+    padding-left: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 90px;
+}
+.menuIcono{
+    border-radius: 50%;
+}
+.headerInicio i.material-icons{
+    margin-right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #FFF5E4; 
+    padding: 8px;
+}
+.iconoYoutube{
+    height: 1.25rem;
+    width: 5.60rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    padding-left: 1rem;
+    padding-right: .875rem;
+    background:transparent;
+}
+.iconoYoutube img{
+    padding: 0;
+    
+}
+.seccionBuscador{
+    /* background: #6A9C89; */
+    width: 45.75rem;
+    height: 2.5rem;
+    display: flex;
+     
+} 
+.seccionSearch{
+    display: flex;
+    align-items: center;
+    width: 39.5rem;
+    height: 2.5rem;
+    padding: 0px .25rem 0px .25rem;
+    margin-left: 2.5rem;
+    margin: 0 0 0 2.5rem;
+    /* background: blue; */
+}
+.buscador{
+    border-radius: 1.625rem;
+    border: solid rgba(121, 117, 117, 0.918) 1px;
+    display: flex;
+    align-items: center;
+    /* background: yellow; */
+    height: 100%;
+    box-sizing: border-box;
+    width: 89.89%;
+}
+.searchBuscador{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.searchBuscador i {
+    padding-left: 13px;
+}
+.searchBuscador input{
+    box-shadow: none;
+    width: 80%;
+    background-color:transparent;
+    border-color: #12140e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: inherit;
+}
+.buttonBuscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 4px 1px 4px;
+    width: 54px;
+    height: 36px;
+    background-color: #5e5e5e69;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:  25px;
+}
+.buttonBuscador button{
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--colorTercero);  
+}
+.voiceBuscador {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: .75rem;
+}
+.seccionBuscador .voiceBuscador button{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.125rem;
+    background-color: #5e5e5e69;
+    border: solid transparent .125rem;
+    color: white;
+}
+.seccionIniciar{
+    width: 15.9375rem;
+    height: 2.5rem;
+    display: flex;
+    /* background-color: blue; */
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+}
+.botonesInicio{
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: transparent;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonesInicio button{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+.botonesInicio:hover, .menuIcono:hover{
+    background-color: #5e5e5e69;  
+}
+.fotoPerfil{
+    background-color: transparent;
+    width: 48px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    padding: .0625rem .375rem .0625rem .375rem;
+}
+.fotoPerfil img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.navegacion.material-icons{
+    color: var(--colorQuinto);
+}
+a{
+    text-decoration: none;
+    color: var(--colorQuinto);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+ 
+.navegacion li a:hover {
+    color: var(--colorCuarto);
+}
