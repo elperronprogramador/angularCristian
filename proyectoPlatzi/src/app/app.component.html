@@ -44,7 +44,72 @@
   </header>
   <main class="contenido">
     <div class="contenedorVideo">
-      <p>videos</p>
+      <section class="seccionVideo">
+        <div class="video">
+          <img [src]="videoYoutube" alt="video">
+        </div>
+      </section>
+      <section class="infoVideos">
+        <h1>{{tituloVideo}}</h1>
+      </section>
+      <section class="suscribir">
+        <div class="imagenCanal">
+          <img [src]="fotoPerfil" alt="foto">
+          <div class="numeroSuscriptores">
+            <div class="nameCanal">
+              <h1>{{nameCanal}}</h1>
+              <i class="material-icons">new_releases</i>
+            </div> 
+            <p> 1M suscriptores</p>
+          </div>
+        </div>
+        <div class="botonSuscripcion">
+          <button>Suscribirse</button>
+        </div>
+        <section class="botonesVideo">
+          <div class="botonesCompartir">
+            <div class="botonLike">
+              <button ><i class="material-icons">thumb_up</i>9,4k</button>
+            </div>
+            <div class="botonNoLike">
+              <button>|<i class="material-icons">thumb_down</i></button>
+            </div>
+          </div>
+          <div class="botonesCompartir">
+            <button class="botonCompartir"><i class="material-icons">reply_all</i>Compartir</button>
+          </div>
+          <div class="botonesCompartir">
+            <button class="botonClip"><i class="material-icons">content_cut</i>Clip</button>
+          </div>
+        </section>
+      </section>
+      <section class="descripcion">
+        <div class="contenedorDescripcion">
+          <div class="visualizaciones">
+            <h1><span class="viewers">{{visualizaciones}}</span>de Visualizaciones</h1>
+            <p>Provided to youtube by cris</p>
+          </div>
+          <div>
+            <p>{{parrafo}}</p>
+          </div>
+        </div>
+        
+      </section>
+      <section class="seccionComentarios">
+        <div class="filtrarComentario">
+          <h1>2 comentarios</h1>
+          <p><i class="material-icons">sort</i>Ordenar por</p>
+        </div>
+        <div class="comentar">
+          <img [src]="fotoPerfil" alt="Img">
+          <input type="text" name="" id="" placeholder="Añade un Comentario">
+        </div>
+        <div class="comentarios">
+          <p>comentario 1</p>
+          <p>comentario 2</p>
+          <p>comentario 3</p>
+        </div>
+      </section>
     </div>
     <div class="contedorOpcionesVideos">
       <p>hoal</p>
@@ -52,7 +117,6 @@
         <p>hoal</p>
       </aside>
     </div>
-    <p>contenido</p>
   </main>
   <footer></footer>
 </body>

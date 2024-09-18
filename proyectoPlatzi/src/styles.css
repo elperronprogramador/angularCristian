@@ -4,7 +4,7 @@
     padding: 0;
 }
 :root{
-    --colorPrimario: #12140e;
+    --colorPrimario: #0f0f0e;
     --colorsecundario: #FFF5E4;
     --colorTercero:#C1D8C3;
     --colorCuarto:#6A9C89;
@@ -17,8 +17,9 @@
     justify-content:space-between ;
     background: var(--colorPrimario);
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 .seccionLogo{
     display: flex;
@@ -170,22 +171,245 @@
     width: 2rem;
     height: 2rem;
 }
+/* ---------------------------------- */
 .contenido{
     width: 100%;
-    background-color: black;
+    background-color: var(--colorPrimario);
     height: 1200px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding-top: 80px;
 }
 .contenedorVideo{
-    width: 37.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 53.85rem;
     height: 100%;
-    background-color: #696969;
+    background-color: transparent;
 }
 .contedorOpcionesVideos{
+    padding-left: 1.25rem;
     width: 25.125rem;
     background-color: #6A9C89;
+}
+.seccionVideos{
+    background-color: #8f0808;
+    width: 100%;
+    height: 50%;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.video img{
+    width: 100%;
+    padding: 10px;
+    height: 460px;
+}
+.infoVideos{
+    color: white;
+}
+.tituloVideo{
+    color: white;
+    height: 1.75rem;
+    width: 40rem;
+}
+.tituloVideo h1{
+    height: 100%;
+    white-space: nowrap;
+}
+.imagenCanal{
+    display: flex;
+    width: 13.4375rem;
+    height: 2.6875rem;
+    /* background-color: blue; */
+    align-items: center;
+}
+.imagenCanal img{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.numeroSuscriptores{
+    display: flex;
+    flex-direction: column;
+}
+.nameCanal{
+    display: flex;
+    align-items: center;
+}
+.numeroSuscriptores .nameCanal h1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+}
+.numeroSuscriptores .nameCanal i{
+    padding-left: 8px;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+.numeroSuscriptores p{
+    font-size: 12px;
+}
+.suscribir{
+    margin-top: 12px;  
+    margin-right: 12px;
+    height: 43px;
+    width: 468px;
+    display: flex; 
+    align-items: center;
+    color: white;
+}
+.suscribir div{
+    padding-right: 2% ;
+}
+.botonSuscripcion{
+    height: 1.98rem;
+    width: 7.9875rem;
+    display: flex;
+    background-color: white;
+    border-radius: 1.25rem;
+}
+.botonSuscripcion button{
+    font-size: 1rem;
+    border-color: transparent;
+    background-color: transparent; 
+    padding-left: .25rem;
 
+}
+.botonSuscripcion:hover{
+    background-color: #81747434;
+}
+.botonesVideo{
+    padding-left: 115px;
+    display: flex;
+}
+.botonesCompartir{
+    justify-content: center;
+    height: 1.98rem;
+    width: 7rem;
+    display: flex;
+    background-color:rgb(66, 66, 66);
+    border-radius: 1.25rem;
+    align-items: center;
+    margin-left: .3125rem;
+}
+.botonesCompartir:hover{
+    background-color: #696969;
+}
+.botonesCompartir button{
+    font-size: 1rem;
+    border-color: transparent;
+    background-color: transparent;
+}
+.botonesCompartir .botonLike button{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.botonesCompartir .botonLike button i{
+    padding-right: .3125rem;
+    padding-left: 1.375rem;
+}
+.botonesCompartir .botonNoLike button{
+    display: flex;
+    color: white;
+}
+.botonesCompartir .botonNoLike button i{
+    padding-right: .625rem;
+    padding-left: .4375rem;
+}
+.botonesCompartir .botonCompartir {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+.botonesCompartir .botonCompartir i{
+    margin:.3125rem;
+}
+.botonesCompartir .botonClip{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.botonesCompartir .botonClip i {
+    margin-right: .1875rem;
+}
+/* ------------------------------------ */
+.descripcion{
+    background-color: transparent;
+    margin-top:  .625rem;
+    font-size: .8438rem;
+}
+.contenedorDescripcion{
+    color: white;
+    background-color: #3d3d3d;
+    padding: .8125rem;
+    border-radius: .8125rem;
+    height: 4.375rem;
+    overflow: hidden;
+}
+.visualizaciones h1{
+    font-size: .875rem;
+}
+/* ------------------------ */
+.seccionComentarios{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+}
+.seccionComentarios .filtrarComentario{
+    display: flex;
+    font-size: 14px;
+    font-style: arial;
+    align-items: center;
+}
+.filtrarComentario h1{
+    font-size: 1.1563rem;
+    margin-right: 1.8125rem;
+}
+.filtrarComentario p{
+    display: flex;
+    align-items: center;
+}
+.filtrarComentario p i{
+    padding-right: .4375rem;
+}
+/* --------------------- */
+.comentar{
+    margin-top: 1.25rem;
+    display: flex;
+}
+.comentar img{
+    display: flex;
+    border-radius: 50%;
+    background-color: red;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.10rem;
+    align-items: center;
+    justify-content: center;
+}
+.comentar input{
+    padding-top: .9375rem; 
+    padding-bottom: .4375rem;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: .0625rem solid rgb(126, 126, 126);
+    width: 90%;
+    height: .5rem;
+}
+.comentarios{
+    margin-top: 1rem;
 }
 .navegacion.material-icons{
     color: var(--colorQuinto);
@@ -197,7 +421,6 @@ a{
     display: flex;
     align-items: center;
 }
- 
 .navegacion li a:hover {
     color: var(--colorCuarto);
 }
