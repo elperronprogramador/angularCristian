@@ -46,7 +46,8 @@
     <div class="contenedorVideo">
       <section class="seccionVideo">
         <div class="video">
-          <img [src]="videoYoutube" alt="video">
+          <iframe src="https://www.youtube.com/embed/0OSMNWgnZ78?si=W-E6YiKlxu5DM2ck" frameborder="0"></iframe>
+          <!-- <img [src]="videoYoutube" alt="video"> -->
         </div>
       </section>
       <section class="infoVideos">
@@ -64,7 +65,7 @@
           </div>
         </div>
         <div class="botonSuscripcion">
-          <button>Suscribirse</button>
+          <button>Suscribirme</button>
         </div>
         <section class="botonesVideo">
           <div class="botonesCompartir">
@@ -111,12 +112,49 @@
         </div>
       </section>
     </div>
-    <div class="contedorOpcionesVideos">
-      <p>hoal</p>
-      <aside>
-        <p>hoal</p>
+    <section class="contedorOpcionesVideos">
+      <div class="botonesRecomendaciones">
+        <button>Todos</button>
+        <button>Años 1980</button>
+        <button>New wad</button>
+        <button>Pop rock</button>
+      </div>
+      <aside class="videosRecomendaciones">
+          <div class="contenedorVideoRecomendacion">
+            <picture class="videoImg">
+              <img [src]="imgVideo1" alt="video">
+            </picture>
+            <div class="videoDescripcion">
+              <h1>Enanitos verdes</h1>
+              <p>nombre canal <i class="material-icons">new_releases</i></p>
+              <p>9M visualizaciones  hace 6 dias</p>
+            </div>
+            <i class="material-icons">more_vert</i>
+          </div>
+          <div class="contenedorVideoRecomendacion">
+            <picture class="videoImg">
+              <img [src]="imgVideo2" alt="video">
+            </picture>
+            <div class="videoDescripcion">
+              <h1>Enanitos verdes</h1>
+              <p>nombre canal <i class="material-icons">new_releases</i></p>
+              <p>9M visualizaciones  hace 6 dias</p>
+            </div>
+            <i class="material-icons">more_vert</i>
+          </div>
+          <div class="contenedorVideoRecomendacion">
+            <picture class="videoImg">
+              <img [src]="imgVideo3" alt="video">
+            </picture>
+            <div class="videoDescripcion">
+              <h1>Enanitos verdes</h1>
+              <p>nombre canal <i class="material-icons">new_releases</i></p>
+              <p>9M visualizaciones  hace 6 dias</p>
+            </div>
+            <i class="material-icons">more_vert</i>
+          </div>
       </aside>
-    </div>
+    </section>
   </main>
   <footer></footer>
 </body>

@@ -190,10 +190,9 @@
 .contedorOpcionesVideos{
     padding-left: 1.25rem;
     width: 25.125rem;
-    background-color: #6A9C89;
+    background-color: transparent;
 }
 .seccionVideos{
-    background-color: #8f0808;
     width: 100%;
     height: 50%;
 }
@@ -203,7 +202,7 @@
     align-items: center;
     width: 100%;
 }
-.video img{
+.video iframe{
     width: 100%;
     padding: 10px;
     height: 460px;
@@ -228,7 +227,6 @@
     align-items: center;
 }
 .imagenCanal img{
-    background-color: red;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -364,11 +362,11 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 17px;
+    padding-top: 1.0625rem;
 }
 .seccionComentarios .filtrarComentario{
     display: flex;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: arial;
     align-items: center;
 }
@@ -410,6 +408,80 @@
 }
 .comentarios{
     margin-top: 1rem;
+}
+/* ------------------------------------- */
+.botonesRecomendaciones{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 3.125rem;
+    width: 100%;
+    overflow: hidden;
+    gap: .625rem;
+    overflow: hidden;
+}
+.botonesRecomendaciones button{
+    color: white;
+    background-color: #242222;
+    border: none;
+    border-radius: .625rem;
+    padding-right: .625rem;
+    padding-top: .4525rem;
+    padding-bottom: .4525rem;
+    padding-left: .6125rem;
+    font-size: 0.95rem;
+    white-space:nowrap;
+}
+.botonesRecomendaciones button:hover{
+    background-color: #383434;
+}
+.botonesRecomendaciones button:active{
+    background-color: white;
+    color: #0f0f0e;
+}
+/* ------------------------ */
+.videosRecomendaciones{
+    background-color: transparent;
+}
+.contenedorVideoRecomendacion{
+    display: flex;
+    height: 6.25rem;
+    margin-top: .625rem;
+}
+.videoImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 11.875rem;
+    border-radius: .5rem;
+}
+.videoImg img{
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+.videoDescripcion{
+    width: 50%;
+    color: white;
+    margin-left: .625rem;
+}
+.videoDescripcion h1{
+    font-size: 1rem;
+}
+.videoDescripcion p{
+    font-size: .8125rem;
+    white-space:nowrap;
+    color: #888787;
+    overflow: hidden;
+}
+.videoDescripcion p i{
+    color: white;
+    font-size: .9375rem;
+}
+.contedorOpcionesVideos i{
+    margin-top: .3125rem;
+    color: white;
 }
 .navegacion.material-icons{
     color: var(--colorQuinto);

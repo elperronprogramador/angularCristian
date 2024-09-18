@@ -28,7 +28,10 @@ export class AppComponent {
   visualizaciones='23424';
   imglogo ='https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png';
   fotoPerfil = 'https://cdn-images.livecareer.es/pages/foto_cv_lc_es_7.jpg';
-  videoYoutube = 'https://cdn.pixabay.com/photo/2019/04/24/21/55/cinema-4153289_960_720.jpg';
+  videoYoutube ='https://www.youtube.com/watch?v=0OSMNWgnZ78';
+  imgVideo1='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAqLYg_QFohwErpsni34VoEW0jtznTleUnw&s';
+  imgVideo2='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNetRJnjYMve8cLL-CCpqEwDWzERC2JDE0w&s';
+  imgVideo3='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezDkFPG6kUKp4ga_5M4xz3X4IdmrrM_jA8w&s';
   parrafo = `
 Lo Que Me Quedó · Santiago Cruz
 
