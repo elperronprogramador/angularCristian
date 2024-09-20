@@ -101,6 +101,9 @@
     max-width: 100%;
     text-align: inherit;
 }
+.searchBuscador input:focus{
+    outline: none;
+}
 .buttonBuscador{
     display: flex;
     align-items: center;
